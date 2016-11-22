@@ -8,7 +8,7 @@ from ptocore.collutils import grouper
 print("--> Good morning! My name is pto-ecn-path-dependancy")
 
 ac = AnalyzerContext()
-OFFSET = datetime.timedelta(hours=12)
+OFFSET = datetime.timedelta(hours = 2)
 max_action_id, timespans = margin(OFFSET, ac.action_set)
 
 # only analyze one timespan per time
