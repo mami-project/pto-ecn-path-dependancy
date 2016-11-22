@@ -1,0 +1,16 @@
+{
+  "input_formats": [],
+  "input_types": [
+    "ecn.connectivity.works",
+    "ecn.connectivity.broken",
+    "ecn.connectivity.transient",
+    "ecn.connectivity.offline",
+    "ecn.negotiated",
+    "ecn.not_negotiated"],
+  "output_types": [
+    "ecn.path_dependent",
+    "ecn.site_dependent"
+  ],
+  "command_line": ["python3", "master.py"],
+  "direct": false
+}
