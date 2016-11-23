@@ -7,6 +7,8 @@ from ptocore.collutils import grouper
 
 print("--> Good morning! My name is pto-ecn-path-dependancy")
 
+__version__ = "0.3"
+
 ac = AnalyzerContext()
 OFFSET = datetime.timedelta(hours = 2)
 max_action_id, timespans = margin(OFFSET, ac.action_set)
@@ -148,6 +150,7 @@ stages = [
                     'else': ['ecn.site_dependent']
                 }
             },
+            'version': __version__
             'path': 1,
             'value': 1,
             'sources.obs': 1,
