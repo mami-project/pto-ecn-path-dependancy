@@ -8,6 +8,7 @@ from ptocore.collutils import grouper
 print("--> Good morning! My name is pto-ecn-path-dependancy")
 
 __version__ = "0.3"
+__version_for_mongo__ = '{}'.format(__version__)
 
 ac = AnalyzerContext()
 OFFSET = datetime.timedelta(hours = 2)
@@ -150,7 +151,7 @@ stages = [
                     'else': ['ecn.site_dependent']
                 }
             },
-            'version': __version__
+            'version': __version_for_mongo__,
             'path': 1,
             'value': 1,
             'sources.obs': 1,
