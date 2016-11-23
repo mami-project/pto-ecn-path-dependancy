@@ -135,8 +135,8 @@ stages = [
     {
         '$match': {
             'any_broken': True,
-            'any_transient': False,
-            'any_offline': False
+        #    'any_transient': False,
+        #    'any_offline': False
         }
     },
     # If there are also some working paths, then we have path dependency
