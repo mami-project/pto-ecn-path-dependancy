@@ -1,15 +1,18 @@
 {
   "input_formats": [],
   "input_types": [
-    "ecn.connectivity.works",
-    "ecn.connectivity.broken",
-    "ecn.connectivity.transient",
-    "ecn.connectivity.offline",
-    "ecn.negotiated",
-    "ecn.not_negotiated"],
+    "ecn.connectivity.super.works",
+    "ecn.connectivity.super.broken",
+    "ecn.connectivity.super.transient",
+    "ecn.connectivity.super.offline",
+    "ecn.connectivity.super.weird"],
   "output_types": [
-    "ecn.path_dependent",
-    "ecn.site_dependent"
+    "ecn.path_dependent.weak",
+    "ecn.path_dependent.strict",
+    "ecn.path_dependent.strong",
+    "ecn.site_dependent.weak",
+    "ecn.site_dependent.strict",
+    "ecn.site_dependent.strong"
   ],
   "command_line": ["python3", "master.py"],
   "direct": false
