@@ -38,7 +38,9 @@ def generate_dependency_conditions(source_conditions):
 
     # Check for weak ECN site dependency
     if      condition_count['ecn.connectivity.super.broken'] >= 1 \
-        and condition_count['ecn.connectivity.super.works'] == 0:
+        and condition_count['ecn.connectivity.super.works'] == 0 \
+        and condition_count['ecn.connectivity.super.transient'] == 0 \
+        and condition_count['ecn.connectivity.super.weird'] == 0:
 
             conditions.append('ecn.site_dependent.weak')
 
